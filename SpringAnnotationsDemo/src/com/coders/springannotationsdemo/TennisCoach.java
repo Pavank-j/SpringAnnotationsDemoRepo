@@ -2,10 +2,12 @@ package com.coders.springannotationsdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 //@Component("thatSillyCoach")//beanID
 @Component//using default beanID"tennisCoach
+@Scope("prototype")
 public class TennisCoach implements Coach {
 
 	@Autowired
